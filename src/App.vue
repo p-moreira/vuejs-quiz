@@ -50,7 +50,7 @@ export default {
   components: { Questions, Result },
   data() {
     return {
-      questions: QuizData.data,
+      questions: QuizData,
       actualQuestion: 0,
       message: {text: '', status: ''},
       showResult: false,
@@ -68,14 +68,14 @@ export default {
         this.message = {text: 'Errado!', status: 'fail'}
       }
       if ( this.isOver ) {
-        this.message.text = this.message.text + `<br>Fim do Jogo! Você fez ${this.points} pontos.`
+        this.message.text = this.message.text + `<br><br>Fim do Jogo!<br>Você fez ${this.points} pontos.`
         // this.message.status = 'end' 
       }
     },
     nextQuestion() {
       if ( this.isOver ) {
         this.showResult = false
-        this.message.text = `Fim do Jogo! Você fez ${this.points} pontos.`
+        this.message.text = `Fim do Jogo!<br>Você fez ${this.points} pontos.`
         this.status = 'end'
       } else {
         this.actualQuestion++
