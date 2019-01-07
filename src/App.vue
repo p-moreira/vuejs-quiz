@@ -15,16 +15,18 @@
 
       <main id="main">
         <div class="wraper">
-          <Questions
-            v-if="!showResult"
-            :question="questions[actualQuestion]"
-            @onResult="processResult($event)">
-          </Questions>
-
-          <Result
-            v-else
-            :message="message">
-          </Result>
+          <transition name ="animate" mode="out-in">
+            <Questions
+              v-if="!showResult"
+              :question="questions[actualQuestion]"
+              @onResult="processResult($event)">
+            </Questions>
+          
+            <Result
+              v-else
+              :message="message">
+            </Result>
+          </transition>
         </div>
       </main>
 
@@ -186,6 +188,34 @@ html, h1, h2, h3, h4, h5, h6, button, input, textarea, select, a, p, span {
 
 #footer .wraper {
   display: grid;
+}
+
+@keyframes animate-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+  
+}
+
+@keyframes animate-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+  
+}
+
+.animate-enter-active {
+  animation: animate-in 0.5s ease;
+}
+
+.animate-leave-active {
+  animation: animate-out 0.5s ease;
 }
 
 @media (min-width: 700px) {

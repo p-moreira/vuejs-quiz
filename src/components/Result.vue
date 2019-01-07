@@ -23,6 +23,10 @@ export default {
     padding: 20px;
 }
 
+.result h2 {
+    font-size: 2.25rem;
+}
+
 .success {
     background-color: var(--success);
 }
