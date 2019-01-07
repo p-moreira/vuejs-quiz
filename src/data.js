@@ -2,17 +2,17 @@ export default [
             {
                 question: 'Em que ano a TV chegou no Brasil?',
                 alternatives: [
-                    { answer: '1950', correct: true },
                     { answer: '1960', correct: false },
                     { answer: '1948', correct: false },
+                    { answer: '1950', correct: true },
                     { answer: '1943', correct: false }
                 ]
             },
             {
                 question: 'Quem foi o responsável por trazer a TV ao Brasil?',
                 alternatives: [
-                    { answer: 'Assis Chateaubriand', correct: true },
                     { answer: 'Adolfo Bloch', correct: false },
+                    { answer: 'Assis Chateaubriand', correct: true },
                     { answer: 'Sílvio Santos', correct: false },
                     { answer: 'Roberto Marinho', correct: false }
                 ]
@@ -38,17 +38,17 @@ export default [
             {
                 question: 'Em que ano foi fundada a Rede Globo?',
                 alternatives: [
-                    { answer: '1965', correct: true },
                     { answer: '1960', correct: false },
                     { answer: '1972', correct: false },
-                    { answer: '1980', correct: false }
+                    { answer: '1980', correct: false },
+                    { answer: '1965', correct: true }
                 ]
             },
             {
                 question: 'Em que ano foi fundado o SBT?',
                 alternatives: [
-                    { answer: '1981', correct: true },
                     { answer: '1976', correct: false },
+                    { answer: '1981', correct: true },
                     { answer: '1980', correct: false },
                     { answer: '1997', correct: false }
                 ]
@@ -56,10 +56,10 @@ export default [
             {
                 question: 'Em que ano foi fundada a Rede Manchete?',
                 alternatives: [
-                    { answer: '1983', correct: true },
                     { answer: '1977', correct: false },
                     { answer: '1979', correct: false },
-                    { answer: '1981', correct: false }
+                    { answer: '1981', correct: false },
+                    { answer: '1983', correct: true }
                 ]
             },
             {
@@ -74,8 +74,8 @@ export default [
             {
                 question: 'Qual foi o primeiro canal de notícias 24 horas do Brasil?',
                 alternatives: [
-                    { answer: 'Globo News', correct: true },
                     { answer: 'Band News', correct: false },
+                    { answer: 'Globo News', correct: true },
                     { answer: 'Record News', correct: false },
                     { answer: 'Todas estão erradas', correct: false }
                 ]
@@ -83,8 +83,8 @@ export default [
             {
                 question: 'Em que ano chegou a televisão à cores no Brasil?',
                 alternatives: [
-                    { answer: '1972', correct: true },
                     { answer: '1970', correct: false },
+                    { answer: '1972', correct: true },
                     { answer: '1969', correct: false },
                     { answer: '1974', correct: false }
                 ]
@@ -92,9 +92,9 @@ export default [
             {
                 question: 'Qual o canal de televisão pública do Brasil?',
                 alternatives: [
-                    { answer: 'TV Brasil', correct: true },
                     { answer: 'Rede Brasil', correct: false },
                     { answer: 'Rede CNT', correct: false },
+                    { answer: 'TV Brasil', correct: true },
                     { answer: 'TV Aparecida', correct: false }
                 ]
             }
