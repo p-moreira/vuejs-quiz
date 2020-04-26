@@ -1,19 +1,26 @@
 <template>
-  <div class="result" :class="message.status">
-    <h2 v-html="message.text"></h2>
-  </div>
+    <div
+        class="result"
+        :class="message.status"
+    >
+        <h2 v-html="message.text" />
+    </div>
 </template>
 
 <script>
 export default {
     props: {
-        message: Object
+        message: {
+            type: Object,
+            default: () => {
+                return {}
+            }
+        }
     }
-};
+}
 </script>
 
 <style scoped>
-
 .result {
     display: grid;
     align-items: center;
@@ -38,5 +45,4 @@ export default {
 .end {
     background-color: var(--info);
 }
-
 </style>
